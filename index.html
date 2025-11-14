@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 必填：50～160 字元描述 -->
+    <meta
+      name="description"
+      content="這是一個為前端工程師打造的個人品牌網站骨架，包含自介、技能、作品集與聯絡方式。此版本為初始框架，後續將以客製化內容替換專區模組。"
+    />
     <title>前端工程師個人網站</title>
 
     <style>
@@ -88,7 +93,7 @@
       }
 
       /* ------------------------------
-       Section 通用樣式
+       Section 共用樣式
     ------------------------------ */
       .section {
         padding: 4rem 1.25rem;
@@ -123,14 +128,14 @@
         color: #cbd5e1;
       }
 
-      /* 區塊占位圖片（可替換） */
+      /* 占位圖片樣式 */
       .placeholder-image {
         width: 100%;
         height: 180px;
         object-fit: cover;
         border-radius: 8px;
         margin: 1.5rem 0;
-        opacity: 0.8;
+        opacity: 0.9;
       }
 
       /* ------------------------------
@@ -146,14 +151,12 @@
       }
 
       /* ------------------------------
-       RWD
-       手機優先，提升桌面版排版
+       RWD：手機優先
     ------------------------------ */
       @media (min-width: 768px) {
         .section-hero h1 {
           font-size: 2.5rem;
         }
-
         .section-hero p {
           font-size: 1.1rem;
         }
@@ -163,7 +166,6 @@
         .section {
           padding: 6rem 1.25rem;
         }
-
         .section-hero {
           padding: 8rem 1.25rem;
         }
@@ -214,10 +216,11 @@
       ------------------------------ -->
         <section id="about" class="section section-about">
           <h2>About 區占位內容</h2>
+
           <img
             class="placeholder-image"
-            src="https://source.unsplash.com/800x600?developer"
-            alt="placeholder"
+            src="https://images.unsplash.com/photo-1581093588401-9b6c78750b2b?auto=format&fit=crop&w=1200&q=80"
+            alt="工程師在筆電前工作，象徵關於我區塊的背景圖"
           />
 
           <p>
@@ -231,10 +234,11 @@
       ------------------------------ -->
         <section id="skills" class="section section-skills">
           <h2>Skills 區占位內容</h2>
+
           <img
             class="placeholder-image"
-            src="https://source.unsplash.com/800x600?coding"
-            alt="placeholder"
+            src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80"
+            alt="程式碼畫面特寫，用於呈現技能區塊示意"
           />
 
           <p>
@@ -248,15 +252,16 @@
       ------------------------------ -->
         <section id="projects" class="section section-projects">
           <h2>Projects 區占位內容</h2>
+
           <img
             class="placeholder-image"
-            src="https://source.unsplash.com/800x600?website"
-            alt="placeholder"
+            src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80"
+            alt="多人合作開發情境圖片，代表作品集展示區"
           />
 
           <p>
-            此區將展示作品集，如個人專案、團隊合作或實作展示。這裡僅為占位，之後會取代成正式的
-            Cards / Grid 版面。
+            這裡將展示你的前端作品、個人專案、Side Project 等。之後會使用
+            Section SDD 生成正式卡片與版面。
           </p>
         </section>
 
@@ -265,23 +270,21 @@
       ------------------------------ -->
         <section id="contact" class="section section-contact">
           <h2>Contact 區占位內容</h2>
+
           <img
             class="placeholder-image"
-            src="https://source.unsplash.com/800x600?contact"
-            alt="placeholder"
+            src="https://images.unsplash.com/photo-1521791055366-0d553872125f?auto=format&fit=crop&w=1200&q=80"
+            alt="手機與桌面辦公環境，象徵聯絡方式"
           />
 
           <p>
-            這裡會放上聯絡方式，例如 Email、表單、社群連結。此區為占位，未來會以
-            Section SDD 設計真正的版面。
+            這裡會放上 Email、社群帳號、聯絡表單等。後續可用 Section SDD
+            產生正式設計並替換。
           </p>
         </section>
       </main>
 
-      <!-- ------------------------------
-         Footer
-    ------------------------------ -->
-      <footer>© 2025 Your Name. All rights reserved.</footer>
+      <footer>© 2025 Your Name. 本網站僅為個人品牌展示用途。</footer>
     </div>
   </body>
 </html>
